@@ -19,7 +19,7 @@ a{
     justify-content: space-between;
     background-color: #fff;
     top: 0;
-    padding: 6px 3%;
+    padding: 6px 6%;
     position: sticky;
     z-index: 100;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1) ;
@@ -116,4 +116,122 @@ a{
     top: 0;
     border-radius: 50%;
     position: absolute;
+}
+
+/* <---------------------------------- Navbar Code ----------------------------------> */
+.container{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+
+.sidebar-profile{
+    background-color: #fff;
+}
+
+.sidebar-profile-info{
+    padding: 10px 25px;
+}
+
+.sidebar-profile-info img{
+    width: 90px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    margin-top: -45px;
+}
+
+.sidebar-profile-info h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+}
+
+.sidebar-profile-info h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+}
+
+.sidebar-profile-info ul{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.sidebar-profile-info ul li{
+    width: 100%;
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+.sidebar-profile-info ul li span{
+    float: right;
+    color: #045be6;
+}
+
+.sidebar-profile-link{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.sidebar-profile-link a{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+}
+
+.sidebar-profile-link a:first-child{
+    border-left: none;
+}
+
+.sidebar-profile-link a img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.sidebar-activity{
+    background: #fff;
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+
+.sidebar-activity h3{
+    color: #777;
+    font-size: 14px;
+    margin: 20px 0 10px;
+}
+
+.sidebar-activity a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    margin: 8px 0;
+}
+
+.sidebar-activity a img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.main-content{
+    flex-basis: 47%;
+}
+
+.right-sidebar{
+    flex-basis: 25%;
+    align-self: flex-end;
 }
