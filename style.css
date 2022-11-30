@@ -227,6 +227,20 @@ a{
     margin-right: 8px;
 }
 
+.discover-more{
+    border-top: 1px solid #ccc;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-more a{
+    color: #045be6;
+    display: inline-block;
+    margin: 10px 0;
+}
+
 .main-content{
     flex-basis: 47%;
 }
