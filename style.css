@@ -241,11 +241,53 @@ a{
     margin: 10px 0;
 }
 
+/* ---------------------- left sidebar done --------------------------- */
+
 .main-content{
     flex-basis: 47%;
 }
 
+/* ------------------------- main-content done ---------------------------  */
+
 .right-sidebar{
     flex-basis: 25%;
-    align-self: flex-end;
+    align-self: flex-start;
+}
+
+.right-sidebar-news{
+    background-color: #fff;
+    padding: 35px 25px;
+}
+
+.right-sidebar-news img{
+    width: 18px;
+    float: right;
+    margin: 15px;
+}
+
+.right-sidebar-news h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 7px 30px;
+}
+
+.right-sidebar-news a{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px;
+    margin-bottom: -10px;
+}
+
+.right-sidebar-news span{
+    display: flex;
+    font-size: 12px;
+    margin: 15px 10px;
+}
+
+.right-sidebar-read-more-link{
+    color: #045be6;
+    font-weight: 500;
+    margin: 20px 0;
 }
