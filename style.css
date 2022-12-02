@@ -22,6 +22,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
     background-color: #fff;
     padding: 6px 6%;
     z-index: 100;
@@ -132,6 +134,8 @@ nav{
 .left-sidebar{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top: 73px;
 }
 
 .sidebar-profile{
@@ -244,6 +248,97 @@ nav{
     margin: 10px 0;
 }
 
+.post{
+    background-color: #fff;
+    padding: 20px 25px 5px;
+    margin: 5px 0 15px;
+}
+
+.post-author{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  
+}
+
+.post-author img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.post-author h1{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.post-author small{
+    display: block;
+    margin-bottom: -2px;
+    font-size: 15px;
+}
+
+.post p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.post-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+
+.post-icons div{
+    display: flex;
+    align-items: center;
+}
+
+.post-icons img{
+    width: 15px;
+    margin-left: -5px;
+}
+
+.liked-user{
+    margin-right: 10px;
+}
+
+.post-activity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post-activity div{
+    display: flex;
+    align-items: center;
+}
+
+.post-activity-user-icon{
+    width: 22px;
+    border-radius: 50%;
+}
+
+.post-activity-arrow-icon{
+    width: 12px;
+    margin-left: 5px;
+}
+
+.post-activity-link img{
+    width: 18px;
+    margin-right: 8px;
+}
+
+
 /* ---------------------- left sidebar done --------------------------- */
 
 .main-content{
@@ -338,11 +433,15 @@ nav{
     margin-left: 3px;
 }
 
+
+
 /* ------------------------- main-content done ---------------------------  */
 
 .right-sidebar{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top:73px;
 }
 
 .right-sidebar-news{
