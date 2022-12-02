@@ -310,6 +310,34 @@ nav{
     font-weight: 500;
 }
 
+.main-content-sort-by{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.main-content-sort-by hr{
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background-color:#ccc;
+}
+
+.main-content-sort-by p{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.main-content-sort-by p span{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.margin-content-sort-by p span img{
+    width: 12px;
+    margin-left: 3px;
+}
+
 /* ------------------------- main-content done ---------------------------  */
 
 .right-sidebar{
