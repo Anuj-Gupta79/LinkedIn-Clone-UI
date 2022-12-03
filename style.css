@@ -1,50 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #f0f2f5;
     color: #5f5f5f;
 }
 
-a{
+a {
     text-decoration: none;
     color: #5f5f5f;
 }
 
-nav{
+.navbar {
     position: sticky;
     top: 0;
-}
-
-.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
     background-color: #fff;
     padding: 6px 6%;
     z-index: 100;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.left-navbar{
+.left-navbar {
     display: flex;
     align-items: center;
 }
 
-.logo{
+.logo {
     display: block;
 }
 
-.logo img{
+.logo img {
     width: 30px;
     margin-right: 10px;
 }
 
-.search-box{
+.search-box {
     display: flex;
     align-items: center;
     width: 250px;
@@ -53,24 +48,24 @@ nav{
     padding: 0 10px;
 }
 
-.search-box img{
+.search-box img {
     width: 15px;
 }
 
-.search-box input{
-    background:transparent;
+.search-box input {
+    background: transparent;
     border: none;
     width: 100%;
     padding: 7px;
     outline: none;
 }
 
-.center-navbar ul li{
+.center-navbar ul li {
     display: inline-block;
     list-style: none;
 }
 
-.center-navbar ul li a{
+.center-navbar ul li a {
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -79,12 +74,12 @@ nav{
     position: relative;
 }
 
-.center-navbar ul li a img{
+.center-navbar ul li a img {
     width: 25px;
     padding-right: 4px;
 }
 
-.center-navbar ul li a::after{
+.center-navbar ul li a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -95,11 +90,11 @@ nav{
 }
 
 .center-navbar ul li a:hover::after,
-.center-navbar ul li a.active-link::after{
+.center-navbar ul li a.active-link::after {
     width: 100%;
 }
 
-.profile-img{
+.profile-img {
     display: block;
     width: 40px;
     border-radius: 50%;
@@ -107,11 +102,11 @@ nav{
     position: relative;
 }
 
-.online{
+.online {
     position: relative;
 }
 
-.online::after{
+.online::after {
     content: '';
     width: 9px;
     height: 9px;
@@ -124,29 +119,29 @@ nav{
 }
 
 /* <---------------------------------- Navbar Code ----------------------------------> */
-.container{
+.container {
     padding: 20px 6%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.left-sidebar{
+.left-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
     position: sticky;
     top: 73px;
 }
 
-.sidebar-profile{
+.sidebar-profile {
     background-color: #fff;
 }
 
-.sidebar-profile-info{
+.sidebar-profile-info {
     padding: 10px 25px;
 }
 
-.sidebar-profile-info img{
+.sidebar-profile-info img {
     width: 90px;
     border-radius: 50%;
     background-color: #fff;
@@ -154,42 +149,42 @@ nav{
     margin-top: -45px;
 }
 
-.sidebar-profile-info h1{
+.sidebar-profile-info h1 {
     font-size: 20px;
     font-weight: 600;
     color: #222;
 }
 
-.sidebar-profile-info h3{
+.sidebar-profile-info h3 {
     font-size: 16px;
     font-weight: 500;
     color: #777;
 }
 
-.sidebar-profile-info ul{
+.sidebar-profile-info ul {
     list-style: none;
     margin: 20px 0;
 }
 
-.sidebar-profile-info ul li{
+.sidebar-profile-info ul li {
     width: 100%;
     margin: 6px 0;
     font-size: 13px;
 }
 
-.sidebar-profile-info ul li span{
+.sidebar-profile-info ul li span {
     float: right;
     color: #045be6;
 }
 
-.sidebar-profile-link{
+.sidebar-profile-link {
     display: flex;
     align-items: center;
     background-color: #fff;
     border-top: 1px solid #ccc;
 }
 
-.sidebar-profile-link a{
+.sidebar-profile-link a {
     flex-basis: 50%;
     display: flex;
     align-items: center;
@@ -199,28 +194,28 @@ nav{
     border-left: 1px solid #ccc;
 }
 
-.sidebar-profile-link a:first-child{
+.sidebar-profile-link a:first-child {
     border-left: none;
 }
 
-.sidebar-profile-link a img{
+.sidebar-profile-link a img {
     width: 20px;
     margin-right: 10px;
 }
 
-.sidebar-activity{
+.sidebar-activity {
     background: #fff;
     padding: 5px 25px;
     margin: 12px 0;
 }
 
-.sidebar-activity h3{
+.sidebar-activity h3 {
     color: #777;
     font-size: 14px;
     margin: 20px 0 10px;
 }
 
-.sidebar-activity a{
+.sidebar-activity a {
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -229,63 +224,63 @@ nav{
     margin: 8px 0;
 }
 
-.sidebar-activity a img{
+.sidebar-activity a img {
     width: 20px;
     margin-right: 8px;
 }
 
-.discover-more{
+.discover-more {
     border-top: 1px solid #ccc;
     display: flex;
-    text-align:center;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
 
-.discover-more a{
+.discover-more a {
     color: #045be6;
     display: inline-block;
     margin: 10px 0;
 }
 
-.post{
+.post {
     background-color: #fff;
     padding: 20px 25px 5px;
     margin: 5px 0 15px;
 }
 
-.post-author{
+.post-author {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-  
+
 }
 
-.post-author img{
+.post-author img {
     width: 35px;
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 5px;
 }
 
-.post-author h1{
+.post-author h1 {
     font-size: 18px;
     color: #333;
     font-weight: 600;
 }
 
-.post-author small{
+.post-author small {
     display: block;
     margin-bottom: -2px;
     font-size: 15px;
 }
 
-.post p{
+.post p {
     font-size: 14px;
     margin-bottom: 15px;
 }
 
-.post-icons{
+.post-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -295,21 +290,21 @@ nav{
     padding-bottom: 6px;
 }
 
-.post-icons div{
+.post-icons div {
     display: flex;
     align-items: center;
 }
 
-.post-icons img{
+.post-icons img {
     width: 15px;
     margin-left: -5px;
 }
 
-.liked-user{
+.liked-user {
     margin-right: 10px;
 }
 
-.post-activity{
+.post-activity {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -318,22 +313,22 @@ nav{
     font-weight: 500;
 }
 
-.post-activity div{
+.post-activity div {
     display: flex;
     align-items: center;
 }
 
-.post-activity-user-icon{
+.post-activity-user-icon {
     width: 22px;
     border-radius: 50%;
 }
 
-.post-activity-arrow-icon{
+.post-activity-arrow-icon {
     width: 12px;
     margin-left: 5px;
 }
 
-.post-activity-link img{
+.post-activity-link img {
     width: 18px;
     margin-right: 8px;
 }
@@ -341,27 +336,27 @@ nav{
 
 /* ---------------------- left sidebar done --------------------------- */
 
-.main-content{
+.main-content {
     flex-basis: 47%;
 }
 
-.main-content-post{
+.main-content-post {
     background-color: #fff;
 }
 
-.main-content-post-input{
+.main-content-post-input {
     padding: 20px 25px 10px;
     display: flex;
     align-items: flex-start;
 }
 
-.main-content-post-input img{
+.main-content-post-input img {
     width: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.main-content-post-input textarea{
+.main-content-post-input textarea {
     background: transparent;
     width: 100%;
     border: 0;
@@ -370,16 +365,16 @@ nav{
     margin-top: 10px;
 }
 
-::placeholder{
+::placeholder {
     font-weight: 500;
 }
 
-.main-content-post-links{
+.main-content-post-links {
     display: flex;
     align-items: flex-start;
 }
 
-.main-content-post-links li{
+.main-content-post-links li {
     list-style: none;
     border-top: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -392,43 +387,43 @@ nav{
     cursor: pointer;
 }
 
-.main-content-post-links img{
+.main-content-post-links img {
     width: 18px;
     margin-right: 10px;
 }
 
-.main-content-post-links li:last-child{
-    border-top:  none;
+.main-content-post-links li:last-child {
+    border-top: none;
     border-right: none;
     background-color: #045be6;
     color: #fff;
     font-weight: 500;
 }
 
-.main-content-sort-by{
+.main-content-sort-by {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
 
-.main-content-sort-by hr{
+.main-content-sort-by hr {
     flex: 1;
     border: 0;
     height: 1px;
-    background-color:#ccc;
+    background-color: #ccc;
 }
 
-.main-content-sort-by p{
+.main-content-sort-by p {
     font-size: 13px;
     padding-left: 5px;
 }
 
-.main-content-sort-by p span{
+.main-content-sort-by p span {
     font-weight: 600;
     cursor: pointer;
 }
 
-.margin-content-sort-by p span img{
+.margin-content-sort-by p span img {
     width: 12px;
     margin-left: 3px;
 }
@@ -437,32 +432,32 @@ nav{
 
 /* ------------------------- main-content done ---------------------------  */
 
-.right-sidebar{
+.right-sidebar {
     flex-basis: 25%;
     align-self: flex-start;
     position: sticky;
-    top:73px;
+    top: 73px;
 }
 
-.right-sidebar-news{
+.right-sidebar-news {
     background-color: #fff;
     padding: 35px 25px;
 }
 
-.right-sidebar-news img{
+.right-sidebar-news img {
     width: 18px;
     float: right;
     margin: 15px;
 }
 
-.right-sidebar-news h3{
+.right-sidebar-news h3 {
     font-size: 25px;
     font-weight: 600;
     color: #333;
     margin: 10px 7px 30px;
 }
 
-.right-sidebar-news a{
+.right-sidebar-news a {
     display: block;
     font-size: 12px;
     font-weight: 600;
@@ -470,19 +465,19 @@ nav{
     margin-bottom: -10px;
 }
 
-.right-sidebar-news span{
+.right-sidebar-news span {
     display: flex;
     font-size: 12px;
     margin: 15px 10px;
 }
 
-.right-sidebar-read-more-link{
+.right-sidebar-read-more-link {
     color: #045be6;
     font-weight: 500;
     margin: 20px 0;
 }
 
-.right-sidebar-ad{
+.right-sidebar-ad {
     background-color: #fff;
     padding: 15px 25px;
     text-align: center;
@@ -490,27 +485,27 @@ nav{
     font-size: 12px;
 }
 
-.right-sidebar-ad img{
+.right-sidebar-ad img {
     width: 60px;
     border-radius: 50%;
     margin: 4px;
 }
 
-.right-sidebar-ad small{
+.right-sidebar-ad small {
     float: right;
     font-weight: 500;
 }
 
-.right-sidebar-ad p{
+.right-sidebar-ad p {
     margin-top: 25px;
     margin-bottom: 10px;
 }
 
-.right-sidebar-ad b{
+.right-sidebar-ad b {
     display: block;
 }
 
-.ad-link{
+.ad-link {
     display: inline-block;
     border: 1px solid #045be6;
     border-radius: 30px;
@@ -527,20 +522,20 @@ nav{
     text-align: center;
 }
 
-.right-sidebar-useful-links a{
+.right-sidebar-useful-links a {
     display: inline-block;
     margin: 4px 20px;
     font-size: 14px;
     font-weight: 450;
 }
 
-.right-sidebar-useful-links a:hover{
+.right-sidebar-useful-links a:hover {
     color: #045be6;
     font-size: 16px;
     font-weight: 500;
 }
 
-.copyright-message{
+.copyright-message {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -549,9 +544,16 @@ nav{
     font-weight: 500;
 }
 
-/* ----------------------------------- right sidebar done ------------------------------ */
-
-.copyright-message img{
+.copyright-message img {
     width: 18px;
     margin-right: 4px;
+}
+
+/* ----------------------------------- right sidebar done ------------------------------ */
+
+.profile-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
 }
