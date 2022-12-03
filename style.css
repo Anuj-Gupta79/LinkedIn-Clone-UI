@@ -616,3 +616,51 @@ a {
 .profile-menu-link p{
     width: 100%;
 }
+
+/* -------------------- Profile ------------------------- */
+
+.profile-main{
+    flex-basis: 73%;
+    align-items: flex-start;
+
+}
+
+.profile-sidebar{
+    flex-basis: 25%;
+    position: sticky;
+    top: 73%;
+}
+
+.profile-container{
+    background-color: #fff;
+}
+
+.profile-container-inner{
+    padding: 0 4% 10px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -75px;
+    background: #fff;
+}
+
+.profile-container h1{
+    font-size: 28px;
+    font-size: 600;
+    color: #222;
+}
+
+.profile-container b{
+    font-weight: 500;
+}
+
+.profile-container p{
+    margin-top: 5px;
+}
+
+.profile-container p a{
+    color: #045be6;
+}

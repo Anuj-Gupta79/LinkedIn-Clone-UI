@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left-navbar">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="Internet_Error">
+            </a>
+            <div class="search-box">
+                <img src="./images/search.png" alt="Internet_Error">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="center-navbar">
+            <ul>
+                <li>
+                    <a href="#" class="active-link">
+                        <img src="./images/home.png" alt="Internet_Error">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/network.png" alt="Internet_Error">
+                        <span>My Network</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/jobs.png" alt="Internet_Error">
+                        <span>Job</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/message.png" alt="Internet_Error">
+                        <span>Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/notification.png" alt="Internet_Error">
+                        <span>Notification</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-navbar">
+            <div class="online">
+                <img src="./images/user-5.png" alt="Internet_Error" class="profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ---------- Profile-Drop-Down-Menu ------------  -->
+
+        <div class="profile-menu-wrap" id="profile-menu-id">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./images/user-5.png" alt="Internet_Error">
+                    <div>
+                        <h3>Kim Chen</h3>
+                        <a href="#"> See Your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="profile-menu-link">
+                    <img src="./images/feedback.png" alt="Internet_Error">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/setting.png" alt="Internet_Error">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/help.png" alt="Internet_Error">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/display.png" alt="Internet_Error">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/logout.png" alt="Internet_Error">
+                    <p>Logout</p>
+                    <span>></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <---- Navbar Close ---->
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="./images/cover-pic.png" alt="Internet_Error" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./images/user-5.png" alt="Internet_Error" class="profile-pic">
+                    <h1>Kim Chen</h1>
+                    <b>SDE at Microsoft | Former software developer at Infosis</b>
+                    <p>London, United Kingdom &middot; <a href="#">Contact Info</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------- profile main end --------------------  -->
+        <div class="profile-sidebar"></div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profile-menu-id");
+        function toggleMenu(){
+            console.log(profileMenu);
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
+</html>
