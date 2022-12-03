@@ -56,10 +56,13 @@
         </div>
         <div class="right-navbar">
             <div class="online">
-                <img src="./images/user-5.png" alt="Internet_Error" class="profile-img">
+                <img src="./images/user-5.png" alt="Internet_Error" class="profile-img" onclick="toggleMenu()">
             </div>
         </div>
-        <div class="profile-menu-wrap">
+
+        <!-- ---------- Profile-Drop-Down-Menu ------------  -->
+
+        <div class="profile-menu-wrap" id="profile-menu-id">
             <div class="profile-menu">
                 <div class="user-info">
                     <img src="./images/user-5.png" alt="Internet_Error">
@@ -68,10 +71,35 @@
                         <a href="#"> See Your profile</a>
                     </div>
                 </div>
+                <hr>
+                <div class="profile-menu-link">
+                    <img src="./images/feedback.png" alt="Internet_Error">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/setting.png" alt="Internet_Error">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/help.png" alt="Internet_Error">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/display.png" alt="Internet_Error">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </div>
+                <div class="profile-menu-link">
+                    <img src="./images/logout.png" alt="Internet_Error">
+                    <p>Logout</p>
+                    <span>></span>
+                </div>
             </div>
         </div>
     </div>
-    <!-- ---------- Profile-Drop-Down-Menu ------------  -->
 
     <!-- <---- Navbar Close ---->
     <div class="container">
@@ -400,6 +428,17 @@
             </div>
         </div>
     </div>
-</body>
 
+    <script>
+        let profileMenu = document.getElementById("profile-menu-id");
+
+        
+
+        function toggleMenu(){
+            console.log(profileMenu);
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
 </html>

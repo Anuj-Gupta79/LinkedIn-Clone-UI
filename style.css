@@ -556,4 +556,63 @@ a {
     top: 100%;
     right: 5%;
     width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.profile-menu{
+    background :#222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h3{
+    font-weight: 500;
+}
+
+.user-info a{
+    color: #c9dbf8;
+    font-size: 13px;
+}
+
+.profile-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    margin: 15px 0px 10px;
+    background: #fff;
+}
+
+.profile-menu-link{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 10px;
+    font-size: 14px;
+}
+
+.profile-menu-link img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-menu-link p{
+    width: 100%;
 }
