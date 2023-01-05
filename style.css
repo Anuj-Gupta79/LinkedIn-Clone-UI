@@ -621,16 +621,14 @@ a {
 
 .profile-main{
     flex-basis: 73%;
-    align-items: flex-start;
-
 }
 
 .profile-sidebar{
+    align-self: flex-start;
     flex-basis: 25%;
     position: sticky;
-    top: 50px;
+    top: 73px;
 }
-
 .profile-container{
     background-color: #fff;
 }
